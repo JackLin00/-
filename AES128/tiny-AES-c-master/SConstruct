@@ -1,0 +1,4 @@
+import os
+env = DefaultEnvironment(tools = ['gcc', 'gnulink'],CC = 'C:\\cygwin64\\bin\\gcc',ENV = os.environ)
+# env.Object('a.c')
+env.Program(['test.c','aes.c'])
